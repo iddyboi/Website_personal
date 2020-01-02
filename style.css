@@ -1,0 +1,173 @@
+/* light-blue #86BBD8*/
+/* naynza #DAF7DC*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #777;
+  padding: 30px;
+}
+ul {
+  list-style: none;
+}
+
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(134, 187, 216, 0.392),
+      rgba(218, 247, 220, 0.355)
+    ),
+    url(./photo-of-white-and-brown-fireworks-973590.jpg);
+  background-size: cover;
+  background-position: center;
+
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+img {
+  width: 100%;
+}
+.img-profile {
+  width: 200px;
+  text-align: center;
+  margin: 20px auto;
+}
+.round-img {
+  border-radius: 50%;
+  border: 5px solid rgb(88, 85, 85);
+  box-shadow: 0 2px 6px black;
+}
+.round-img:hover {
+  border: 5px solid rgb(196, 23, 23);
+}
+/* logo */
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo {
+  font-size: 30px;
+  color: #fff;
+}
+.primary-heading {
+  color: #fff;
+  text-transform: uppercase;
+}
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+}
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 15px;
+  animation: moveInRight 3s ease-out;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* me section */
+
+.about {
+  padding: 60px 10px 60px 10px;
+}
+.about__heading {
+  text-transform: uppercase;
+}
+
+.about__lead {
+  margin-bottom: 10px;
+  padding: 10px 0px 0px 20px;
+}
+
+/* skills */
+
+.skills__heading {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.skills {
+  padding: 60px 10px 60px 10px;
+}
+.skills__intro {
+  margin-bottom: 20px;
+}
+.skills__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+}
+.si {
+  padding-bottom: 20px;
+}
+
+.si h3 {
+  color: rgb(45, 47, 180);
+}
+/* connections */
+
+.connections {
+  /* background-color: #000000; */
+  color: #000;
+  padding: 30px 5px;
+}
+
+.connections__links {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.connections__link {
+  text-decoration: none;
+  color: rgb(45, 47, 180);
+  font-size: 1.4rem;
+}
+.connections__link:hover {
+  color: #96cdff;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
