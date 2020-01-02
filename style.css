@@ -57,6 +57,15 @@ img {
 .logo {
   font-size: 30px;
   color: #fff;
+  position: relative;
+}
+.logo::before {
+  content: " ";
+  width: 115%;
+  background-color: gold;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
 }
 .primary-heading {
   color: #fff;
@@ -145,6 +154,27 @@ img {
 .connections__link:hover {
   color: #96cdff;
 }
+
+/* projects */
+
+.projects__source {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects__links {
+  flex: 1 0 300px;
+  padding: 0 1rem;
+}
+.projects__heading {
+  padding: 1.7rem 0;
+}
+.projects__links-h2 {
+  padding: 0.7rem 0;
+}
+.projects__links-lead {
+  padding-bottom: 2rem;
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -169,5 +199,49 @@ img {
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+/* big screens */
+
+@media (min-width: 900px) {
+  .skills {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .about {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .connections {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  /* projects */
+  .projects {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 5px;
+  }
+  .skills__info {
+    padding: 10px 0px 0px 20px;
+  }
+  .skills__intro {
+    padding: 10px 0px 0px 20px;
+  }
+  .time-handle {
+    font-size: 16px;
+  }
+  .logo-box {
+    left: 22px;
+  }
+  .logo {
+    font-size: 23px;
   }
 }
