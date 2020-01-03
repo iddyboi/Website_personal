@@ -1,5 +1,6 @@
 /* light-blue #86BBD8*/
 /* naynza #DAF7DC*/
+@import "./scss/profile";
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +26,7 @@ ul {
       rgba(134, 187, 216, 0.392),
       rgba(218, 247, 220, 0.355)
     ),
-    url(./photo-of-white-and-brown-fireworks-973590.jpg);
+    url(../images/photo-of-white-and-brown-fireworks-973590.jpg);
   background-size: cover;
   background-position: center;
 

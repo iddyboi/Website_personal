@@ -29,3 +29,5 @@ button.addEventListener("click", () => {
   let count = 0;
   message.innerHTML = count += count;
 });
+
+// API DATA
