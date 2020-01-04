@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./dist/js/app.js",
     "build": "webpack"
   },
   "repository": {
@@ -22,6 +22,9 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.4",
     "webpack": "^4.41.5",
     "webpack-dev-server": "^3.10.1"
   },
