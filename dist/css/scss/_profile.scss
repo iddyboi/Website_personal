@@ -39,6 +39,10 @@ a {
     display: flex;
     align-items: center;
   }
+  h3 {
+    color: #37259c;
+    text-transform: uppercase;
+  }
 }
 
 // intro
@@ -145,6 +149,12 @@ a {
   .contact {
     &__lead {
       width: 50%;
+    }
+  }
+
+  .introduction {
+    &__heading {
+      font-size: 6rem;
     }
   }
 }
