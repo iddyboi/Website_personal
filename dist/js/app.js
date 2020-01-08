@@ -4,7 +4,7 @@ require("dotenv/config");
 
 // import routes
 
-const postsRoutes = require("./routes/post");
+const postsRoutes = require("./routes/index");
 
 const app = express();
 

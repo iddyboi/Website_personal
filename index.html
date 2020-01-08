@@ -39,10 +39,12 @@
         <h3 class="soft-skills__heading">Skills</h3>
         <div class="soft-skills__content">
           <div class="st soft-skills__description">
+            <h3>Soft Skills</h3>
             <p>
-              Software development is hard. Managing projects is hard. Working
-              remotely is hard. Here are some things I'm good at, to help ease
-              the pain.
+              Software development is always growing and we need to always
+              learn, but I say some of us are missing soft skills to make the
+              job easier for us. These are a few skills I have to help me become
+              a better programmer, not just for me but for my team.
             </p>
           </div>
           <div class="st soft-skills__items">
@@ -59,15 +61,15 @@
               <h3>Quick Thinker</h3>
               <p>
                 Becoming a quick thinker is not always the best tool as we all
-                need to make sure we produce the best work we can. But where I
-                utilise this skills is when learning new things, once I learned
+                need to ensure we produce the best work we can. But where I
+                utilise these skills is when learning new things, once I learned
                 Javascript I could grasp ES6 easy.
               </p>
             </div>
             <div class="item">
               <h3>Communication</h3>
               <p>
-                Some people think that coding is a one mans jobs, well i don't
+                Some people think that coding is a one mans job, well I don't
                 think so, for a team to progress they need to work with one
                 another. I wouldn't say my graphic skills are up there but
                 working with a graphic designer and communicating on how to work
@@ -86,11 +88,11 @@
           <h4>Get In Touch</h4>
           <div class="contact__lead">
             If you need help with building a responsive website you can get in
-            touch with me. I have 2 years experience with HTML, CSS3, SCSS and
-            Javascript. If frameworks and libraries are your thing I have
+            touch with me. I have 2 years of experience with HTML, CSS3, SCSS,
+            and Javascript. If frameworks and libraries are your thing I have
             experience in ReactJs, I also work on back end technologies such as
-            Nodejs with Express as the framework...oh yh and dont forget
-            databases, I use mySQL if thats what you need.😬
+            Nodejs with Express as the framework...oh yeah and don't forget
+            databases, I use MySQL if that's what you need.😬
           </div>
           <a href="mailto:idrist2013@gmail.com" class="email"
             >Idrist2013@gmail.com</a
@@ -101,7 +103,16 @@
       <hr />
       <!-- end of container -->
     </div>
-
-    <script src="./api.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.4/gsap.min.js"></script>
+    <script>
+      gsap.to(".introduction__heading", { x: -5, duration: 2 });
+      gsap.from(".headernav", {
+        y: 16,
+        opacity: 0,
+        duration: 2,
+        ease: "power3.inOut"
+      });
+    </script>
+    <script src="./dist/js/index.js"></script>
   </body>
 </html>

@@ -1,9 +1,9 @@
 const express = require("express");
-const Post = require("../../models/Post");
+
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send("post");
+  res.sendFile(__dirname + "../../../index.html");
 });
 
 module.exports = router;
