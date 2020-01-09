@@ -1,33 +1,16 @@
-// var time = document.querySelector(".time");
-// var currentTime = new Date().toLocaleTimeString();
+// background color change
+const hexNumber = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const hexBtn = document.querySelector(".hexBtn");
+const bodybcg = document.querySelector(".body-hex");
+const hex = document.querySelector(".hex");
 
-// time.innerHTML = currentTime;
-
-// // greeting
-
-// let greeting = document.querySelector(".greeting");
-
-// let greeting_time = new Date().getHours();
-
-// greeting.innerHTML = greetByHours();
-
-// function greetByHours() {
-//   if (greeting_time < 12) {
-//     return "Good Morning";
-//   } else if (greeting_time < 18) {
-//     return "Good Afternoon";
-//   } else {
-//     return "Good evening";
-//   }
-// }
-
-// // form
-// let button = document.querySelector("#submit");
-
-// button.addEventListener("click", () => {
-//   let message = document.querySelector("#message");
-//   let count = 0;
-//   message.innerHTML = count += count;
-// });
-
-// // API DATA
+hexBtn.addEventListener("click", () => {
+  let hexCol = "#";
+  for (let i = 0; i < 6; i++) {
+    let random = Math.floor(Math.random() * hexNumber.length);
+    hexCol += hexNumber[random];
+    console.log(hexCol);
+  }
+  bodybcg.style.backgroundColor = hexCol;
+  hex.textContent = hexCol;
+});
